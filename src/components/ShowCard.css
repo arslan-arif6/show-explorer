@@ -1,0 +1,11 @@
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: transform .15s ease, border-color .15s ease; }
+.card:hover { transform: translateY(-3px); border-color: var(--accent); }
+.card-poster { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; background: #1d1d26; display: block; }
+.card-noposter { display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: .85rem; }
+.card-body { padding: 12px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.card-title { margin: 0; font-size: .98rem; line-height: 1.25; }
+.card-meta { margin: 0; color: var(--muted); font-size: .82rem; }
+.card-rating { color: var(--accent); }
+.fav-btn { margin-top: auto; padding: 8px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text); cursor: pointer; font: inherit; font-size: .85rem; }
+.fav-btn:hover { border-color: var(--accent); }
+.fav-btn.is-fav { background: var(--accent); border-color: var(--accent); color: #1a1205; font-weight: 600; }
